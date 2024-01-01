@@ -1,0 +1,4 @@
+/home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/cov-security-da --dir /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int 
+cov-security-da version 2023.6.2 on Linux 5.15.0-91-generic x86_64
+Internal version numbers: 4576aa16bd p-2023.6-push-64
+

@@ -1,0 +1,9 @@
+# Version: 4576aa16bd p-2023.6-push-64
+# Command Line: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/cov-security-da --dir /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int
+timer                         ms      calls
+-------------------------------------------
+cov_security_da::run           1          1
+
+activity                      ms      calls
+-------------------------------------------
+cov_security_da::run           1          1

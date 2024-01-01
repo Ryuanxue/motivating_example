@@ -1,0 +1,32 @@
+# Version: 4576aa16bd p-2023.6-push-64
+# Command Line: cov-build --dir cov-int make
+timer                                  ms      calls
+----------------------------------------------------
+cov-build                            5478          1
+  create_or_open emit DB                6          1
+    open emit DB                        6          1
+  add_string_to_table                   0         80
+  addEmitFileName                       0          1
+    addEmitFileName                     0          1
+      addEmitFileName                   0          1
+        addEmitFileName                 0          1
+          addEmitFileName               0          1
+            addEmitFileName             0          1
+              addEmitFileName           0          1
+  Prepare capture                       1          1
+  Running build command              5424          1
+  SecurityDA                           42          1
+  TUInfo::getPrimarySFRow               0          1
+  (left over)                           5
+
+activity                               ms      calls
+----------------------------------------------------
+cov-build                            5478          1
+create_or_open emit DB                  6          1
+open emit DB                            6          1
+add_string_to_table                     0         80
+addEmitFileName                         0          7
+Prepare capture                         1          1
+Running build command                5424          1
+SecurityDA                             42          1
+TUInfo::getPrimarySFRow                 0          1

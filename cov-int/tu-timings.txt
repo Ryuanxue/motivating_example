@@ -1,0 +1,5 @@
+Translation unit:
+1 -> /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/motivating_ex1.c
+cov-emit invocation time (seconds): 0
+cov-translate invocation time (seconds): 6
+cov-build invocation time (seconds): 6

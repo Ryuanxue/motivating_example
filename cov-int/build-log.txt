@@ -1,0 +1,1802 @@
+2024-01-01T07:44:02.980003Z|cov-build|812564|info|> cov-build 2023.6.2 (build 4576aa16bd p-2023.6-push-64)
+2024-01-01T07:44:02.980021Z|cov-build|812564|info|> Coverity Build Capture (64-bit) version 2023.6.2 on Linux 5.15.0-91-generic x86_64
+2024-01-01T07:44:02.980021Z|cov-build|812564|info|> Internal version numbers: 4576aa16bd p-2023.6-push-64
+2024-01-01T07:44:02.980021Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980031Z|cov-build|812564|info|> Dumping from hostname : raoxue-Inspiron-3910
+2024-01-01T07:44:02.980031Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980036Z|cov-build|812564|info|> Platform info:
+2024-01-01T07:44:02.980036Z|cov-build|812564|info|> Sysname = Linux
+2024-01-01T07:44:02.980036Z|cov-build|812564|info|> Release = 5.15.0-91-generic
+2024-01-01T07:44:02.980036Z|cov-build|812564|info|> Machine = x86_64
+2024-01-01T07:44:02.980036Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980036Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980046Z|cov-build|812564|info|> cov-build command: cov-build --dir cov-int make 
+2024-01-01T07:44:02.980049Z|cov-build|812564|info|> cov-build expanded command: cov-build --dir cov-int make 
+2024-01-01T07:44:02.980185Z|cov-build|812564|info|> build command: /usr/bin/make
+2024-01-01T07:44:02.980192Z|cov-build|812564|info|> thunk command: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/cov-internal-thunk.sh make
+2024-01-01T07:44:02.980192Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980198Z|cov-build|812564|info|> Set MSBUILDDISABLENODEREUSE to 1
+2024-01-01T07:44:02.980202Z|cov-build|812564|info|> Set UseSharedCompilation to false.
+2024-01-01T07:44:02.980208Z|cov-build|812564|info|> Set COVERITY_BIN to /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin
+2024-01-01T07:44:02.980220Z|cov-build|812564|info|> Set COVERITY_SITE_CC to *-g++;*-gcc;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe;apt;ar;c++;cc;cl;clang;clang++;csc;csc.dll;csc2;devenv;dotnet;g++;g++-*;gcc;gcc-*;go;jar;java;javac;javaw;kotlin;kotlinc;ld;lib;link;msbuild;nvcc;razor;scala;scalac;vbc;vbc.dll
+2024-01-01T07:44:02.980226Z|cov-build|812564|info|> Set COVERITY_SITE_CC_CAPTURE_DESCENDANTS to dotnet
+2024-01-01T07:44:02.980231Z|cov-build|812564|info|> Set COVERITY_TEMP to /tmp/cov-raoxue/95706ede58e90b6974137b79c834cf29
+2024-01-01T07:44:02.980238Z|cov-build|812564|info|> Set COVERITY_COMMON_TEMP to /tmp
+2024-01-01T07:44:02.980243Z|cov-build|812564|info|> Set COVERITY_IDIR to /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int
+2024-01-01T07:44:02.980271Z|cov-build|812564|info|> Set COVERITY_OUTPUT to /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/build-log.txt
+2024-01-01T07:44:02.980276Z|cov-build|812564|info|> Set COVERITY_LOG to /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/build-log.txt
+2024-01-01T07:44:02.980318Z|cov-build|812564|info|> Set COVERITY_OUTPUT_ENCODING to UTF-8
+2024-01-01T07:44:02.980325Z|cov-build|812564|info|> Set COVERITY_SYSTEM_ENCODING to UTF-8
+2024-01-01T07:44:02.980330Z|cov-build|812564|info|> Set COVERITY_EMIT to /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit
+2024-01-01T07:44:02.980345Z|cov-build|812564|info|> Set COVERITY_EMIT to /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit
+2024-01-01T07:44:02.980358Z|cov-build|812564|info|> Set COVERITY_ENABLE_JAVA_PARSE_ERROR_RECOVERY to 1
+2024-01-01T07:44:02.980408Z|cov-build|812564|info|> Set COVERITY_JAVA_CONFIG to javac#TEMPLATE##java#TEMPLATE##apt#TEMPLATE##javaw#TEMPLATE###
+2024-01-01T07:44:02.980421Z|cov-build|812564|info|> Set COVERITY_IS_COMPILER to 0
+2024-01-01T07:44:02.980424Z|cov-build|812564|info|> Set COVERITY_TOP_PROCESS to 0
+2024-01-01T07:44:02.980427Z|cov-build|812564|info|> Set COVERITY_IS_COMPILER_DESCENDANT to 0
+2024-01-01T07:44:02.980429Z|cov-build|812564|info|> Set COVERITY_DISENGAGE_EXES to "qemuwrapper;qemu-aarch64;qemu-alpha;qemu-arm;qemu-armeb;qemu-cris;qemu-i386;qemu-m68k;qemu-microblaze;qemu-mips;qemu-mipsel;qemu-nios2;qemu-ppc;qemu-ppc64;qemu-ppc64abi32;qemu-sh4;qemu-sh4eb;qemu-sparc;qemu-sparc32plus;qemu-sparc64;qemu-x86_64"
+2024-01-01T07:44:02.980446Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980446Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980446Z|cov-build|812564|info|> Dumping Environment Variables:
+2024-01-01T07:44:02.980446Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980463Z|cov-build|812564|info|> SHELL=/bin/bash
+2024-01-01T07:44:02.980467Z|cov-build|812564|info|> SESSION_MANAGER=local/raoxue-Inspiron-3910:@/tmp/.ICE-unix/2314,unix/raoxue-Inspiron-3910:/tmp/.ICE-unix/2314
+2024-01-01T07:44:02.980469Z|cov-build|812564|info|> QT_ACCESSIBILITY=1
+2024-01-01T07:44:02.980471Z|cov-build|812564|info|> COLORTERM=truecolor
+2024-01-01T07:44:02.980474Z|cov-build|812564|info|> XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+2024-01-01T07:44:02.980476Z|cov-build|812564|info|> XDG_MENU_PREFIX=gnome-
+2024-01-01T07:44:02.980478Z|cov-build|812564|info|> no_proxy=localhost,127.0.0.0/8,::1
+2024-01-01T07:44:02.980480Z|cov-build|812564|info|> GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+2024-01-01T07:44:02.980483Z|cov-build|812564|info|> GTK_IM_MODULE=fcitx
+2024-01-01T07:44:02.980485Z|cov-build|812564|info|> LANGUAGE=en_US:en
+2024-01-01T07:44:02.980487Z|cov-build|812564|info|> QT4_IM_MODULE=fcitx
+2024-01-01T07:44:02.980489Z|cov-build|812564|info|> LC_ADDRESS=zh_CN.UTF-8
+2024-01-01T07:44:02.980492Z|cov-build|812564|info|> GNOME_SHELL_SESSION_MODE=ubuntu
+2024-01-01T07:44:02.980494Z|cov-build|812564|info|> LC_NAME=zh_CN.UTF-8
+2024-01-01T07:44:02.980496Z|cov-build|812564|info|> SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+2024-01-01T07:44:02.980498Z|cov-build|812564|info|> XMODIFIERS=@im=fcitx
+2024-01-01T07:44:02.980501Z|cov-build|812564|info|> DESKTOP_SESSION=ubuntu
+2024-01-01T07:44:02.980503Z|cov-build|812564|info|> LC_MONETARY=zh_CN.UTF-8
+2024-01-01T07:44:02.980505Z|cov-build|812564|info|> SSH_AGENT_PID=2269
+2024-01-01T07:44:02.980508Z|cov-build|812564|info|> GTK_MODULES=gail:atk-bridge
+2024-01-01T07:44:02.980510Z|cov-build|812564|info|> DBUS_STARTER_BUS_TYPE=session
+2024-01-01T07:44:02.980512Z|cov-build|812564|info|> PWD=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan
+2024-01-01T07:44:02.980514Z|cov-build|812564|info|> XDG_SESSION_DESKTOP=ubuntu
+2024-01-01T07:44:02.980516Z|cov-build|812564|info|> LOGNAME=raoxue
+2024-01-01T07:44:02.980519Z|cov-build|812564|info|> XDG_SESSION_TYPE=x11
+2024-01-01T07:44:02.980521Z|cov-build|812564|info|> GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+2024-01-01T07:44:02.980523Z|cov-build|812564|info|> XAUTHORITY=/run/user/1000/gdm/Xauthority
+2024-01-01T07:44:02.980525Z|cov-build|812564|info|> ftp_proxy=http://127.0.0.1:8889/
+2024-01-01T07:44:02.980528Z|cov-build|812564|info|> WINDOWPATH=2
+2024-01-01T07:44:02.980530Z|cov-build|812564|info|> HOME=/home/raoxue
+2024-01-01T07:44:02.980532Z|cov-build|812564|info|> USERNAME=raoxue
+2024-01-01T07:44:02.980535Z|cov-build|812564|info|> IM_CONFIG_PHASE=1
+2024-01-01T07:44:02.980537Z|cov-build|812564|info|> LC_PAPER=zh_CN.UTF-8
+2024-01-01T07:44:02.980539Z|cov-build|812564|info|> LANG=en_US.UTF-8
+2024-01-01T07:44:02.980541Z|cov-build|812564|info|> LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+2024-01-01T07:44:02.980547Z|cov-build|812564|info|> XDG_CURRENT_DESKTOP=ubuntu:GNOME
+2024-01-01T07:44:02.980550Z|cov-build|812564|info|> VTE_VERSION=6003
+2024-01-01T07:44:02.980552Z|cov-build|812564|info|> GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/2bfc04f5_31c0_4716_bcfd_ccb476650d70
+2024-01-01T07:44:02.980554Z|cov-build|812564|info|> https_proxy=http://127.0.0.1:8889/
+2024-01-01T07:44:02.980557Z|cov-build|812564|info|> INVOCATION_ID=606044cb09b74162a400eebb74dde232
+2024-01-01T07:44:02.980559Z|cov-build|812564|info|> MANAGERPID=2093
+2024-01-01T07:44:02.980561Z|cov-build|812564|info|> CLUTTER_IM_MODULE=fcitx
+2024-01-01T07:44:02.980563Z|cov-build|812564|info|> LESSCLOSE=/usr/bin/lesspipe %s %s
+2024-01-01T07:44:02.980565Z|cov-build|812564|info|> XDG_SESSION_CLASS=user
+2024-01-01T07:44:02.980568Z|cov-build|812564|info|> TERM=xterm-256color
+2024-01-01T07:44:02.980570Z|cov-build|812564|info|> LC_IDENTIFICATION=zh_CN.UTF-8
+2024-01-01T07:44:02.980573Z|cov-build|812564|info|> LESSOPEN=| /usr/bin/lesspipe %s
+2024-01-01T07:44:02.980575Z|cov-build|812564|info|> USER=raoxue
+2024-01-01T07:44:02.980577Z|cov-build|812564|info|> NO_PROXY=localhost,127.0.0.0/8,::1
+2024-01-01T07:44:02.980579Z|cov-build|812564|info|> FTP_PROXY=http://127.0.0.1:8889/
+2024-01-01T07:44:02.980582Z|cov-build|812564|info|> GNOME_TERMINAL_SERVICE=:1.140
+2024-01-01T07:44:02.980584Z|cov-build|812564|info|> DISPLAY=:0
+2024-01-01T07:44:02.980586Z|cov-build|812564|info|> SHLVL=1
+2024-01-01T07:44:02.980588Z|cov-build|812564|info|> LC_TELEPHONE=zh_CN.UTF-8
+2024-01-01T07:44:02.980591Z|cov-build|812564|info|> HTTPS_PROXY=http://127.0.0.1:8889/
+2024-01-01T07:44:02.980593Z|cov-build|812564|info|> HTTP_PROXY=http://127.0.0.1:8889/
+2024-01-01T07:44:02.980595Z|cov-build|812564|info|> QT_IM_MODULE=fcitx
+2024-01-01T07:44:02.980597Z|cov-build|812564|info|> LC_MEASUREMENT=zh_CN.UTF-8
+2024-01-01T07:44:02.980600Z|cov-build|812564|info|> DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=ab767898dd03104af0d126206588e311
+2024-01-01T07:44:02.980602Z|cov-build|812564|info|> PAPERSIZE=a4
+2024-01-01T07:44:02.980604Z|cov-build|812564|info|> http_proxy=http://127.0.0.1:8889/
+2024-01-01T07:44:02.980606Z|cov-build|812564|info|> XDG_RUNTIME_DIR=/run/user/1000
+2024-01-01T07:44:02.980609Z|cov-build|812564|info|> ALL_PROXY=socks://127.0.0.1:1089/
+2024-01-01T07:44:02.980611Z|cov-build|812564|info|> LC_TIME=zh_CN.UTF-8
+2024-01-01T07:44:02.980613Z|cov-build|812564|info|> JOURNAL_STREAM=8:44950
+2024-01-01T07:44:02.980615Z|cov-build|812564|info|> XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+2024-01-01T07:44:02.980618Z|cov-build|812564|info|> all_proxy=socks://127.0.0.1:1089/
+2024-01-01T07:44:02.980620Z|cov-build|812564|info|> PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin
+2024-01-01T07:44:02.980622Z|cov-build|812564|info|> GDMSESSION=ubuntu
+2024-01-01T07:44:02.980624Z|cov-build|812564|info|> DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=ab767898dd03104af0d126206588e311
+2024-01-01T07:44:02.980627Z|cov-build|812564|info|> LC_NUMERIC=zh_CN.UTF-8
+2024-01-01T07:44:02.980629Z|cov-build|812564|info|> _=/usr/bin/make
+2024-01-01T07:44:02.980631Z|cov-build|812564|info|> COVERITY_PREV_XML_CATALOG_FILES=
+2024-01-01T07:44:02.980633Z|cov-build|812564|info|> COVERITY_TOP_CONFIG=/tmp/cov-raoxue/95706ede58e90b6974137b79c834cf29/cov-configure/coverity_config.xml
+2024-01-01T07:44:02.980637Z|cov-build|812564|info|> COVERITY_BUILD_INVOCATION_ID=1
+2024-01-01T07:44:02.980640Z|cov-build|812564|info|> COVERITY_CONFIG_FILE=/home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/coverity_config.xml
+2024-01-01T07:44:02.980642Z|cov-build|812564|info|> MSBUILDDISABLENODEREUSE=1
+2024-01-01T07:44:02.980644Z|cov-build|812564|info|> UseSharedCompilation=false
+2024-01-01T07:44:02.980647Z|cov-build|812564|info|> COVERITY_BIN=/home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin
+2024-01-01T07:44:02.980649Z|cov-build|812564|info|> COVERITY_SITE_CC=*-g++;*-gcc;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe;apt;ar;c++;cc;cl;clang;clang++;csc;csc.dll;csc2;devenv;dotnet;g++;g++-*;gcc;gcc-*;go;jar;java;javac;javaw;kotlin;kotlinc;ld;lib;link;msbuild;nvcc;razor;scala;scalac;vbc;vbc.dll
+2024-01-01T07:44:02.980652Z|cov-build|812564|info|> COVERITY_SITE_CC_CAPTURE_DESCENDANTS=dotnet
+2024-01-01T07:44:02.980654Z|cov-build|812564|info|> COVERITY_TEMP=/tmp/cov-raoxue/95706ede58e90b6974137b79c834cf29
+2024-01-01T07:44:02.980657Z|cov-build|812564|info|> COVERITY_COMMON_TEMP=/tmp
+2024-01-01T07:44:02.980659Z|cov-build|812564|info|> COVERITY_IDIR=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int
+2024-01-01T07:44:02.980662Z|cov-build|812564|info|> COVERITY_REWRITE_FROM=
+2024-01-01T07:44:02.980664Z|cov-build|812564|info|> COVERITY_REWRITE_TO=
+2024-01-01T07:44:02.980666Z|cov-build|812564|info|> COVERITY_ENABLE_JAVA_ANNOTATION_FRAMEWORK_SUPPORT=1
+2024-01-01T07:44:02.980668Z|cov-build|812564|info|> COVERITY_OUTPUT=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/build-log.txt
+2024-01-01T07:44:02.980671Z|cov-build|812564|info|> COVERITY_LOG=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/build-log.txt
+2024-01-01T07:44:02.980673Z|cov-build|812564|info|> COVERITY_OUTPUT_ENCODING=UTF-8
+2024-01-01T07:44:02.980675Z|cov-build|812564|info|> COVERITY_SYSTEM_ENCODING=UTF-8
+2024-01-01T07:44:02.980677Z|cov-build|812564|info|> COVERITY_EMIT=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit
+2024-01-01T07:44:02.980680Z|cov-build|812564|info|> COVERITY_ENABLE_JAVA_PARSE_ERROR_RECOVERY=1
+2024-01-01T07:44:02.980682Z|cov-build|812564|info|> COVERITY_JAVA14_WARNING_FILE=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/warn_about_java14_compilations
+2024-01-01T07:44:02.980684Z|cov-build|812564|info|> COVERITY_JAVA_CONFIG=javac#TEMPLATE##java#TEMPLATE##apt#TEMPLATE##javaw#TEMPLATE###
+2024-01-01T07:44:02.980687Z|cov-build|812564|info|> COVERITY_ENABLE_CECS_WATCHDOG=1
+2024-01-01T07:44:02.980689Z|cov-build|812564|info|> COVERITY_IS_COMPILER=0
+2024-01-01T07:44:02.980691Z|cov-build|812564|info|> COVERITY_TOP_PROCESS=0
+2024-01-01T07:44:02.980693Z|cov-build|812564|info|> COVERITY_IS_COMPILER_DESCENDANT=0
+2024-01-01T07:44:02.980695Z|cov-build|812564|info|> COVERITY_DISENGAGE_EXES=qemuwrapper;qemu-aarch64;qemu-alpha;qemu-arm;qemu-armeb;qemu-cris;qemu-i386;qemu-m68k;qemu-microblaze;qemu-mips;qemu-mipsel;qemu-nios2;qemu-ppc;qemu-ppc64;qemu-ppc64abi32;qemu-sh4;qemu-sh4eb;qemu-sparc;qemu-sparc32plus;qemu-sparc64;qemu-x86_64
+2024-01-01T07:44:02.980698Z|cov-build|812564|info|> COVERITY_COMPILER_PATH_MISMATCH_FILE=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/has_path_mismatches
+2024-01-01T07:44:02.980700Z|cov-build|812564|info|> COVERITY_PATHLESS_CONFIGS_FILE=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/has_pathless_configs
+2024-01-01T07:44:02.980705Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980705Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980705Z|cov-build|812564|info|> Dumping configuration:
+2024-01-01T07:44:02.980705Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980714Z|cov-build|812564|info|> User/default configuration:
+2024-01-01T07:44:02.980714Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|> Configuration read from: command-line
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/coverity_config.xml
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|>     Node: prevent
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|>       Node: dir Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int
+2024-01-01T07:44:02.980718Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-1/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-2/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-1/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-2/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ld-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ar-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-3/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-3/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-javac-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-java-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-apt-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-javaw-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-jar-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-jsp-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-android-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-capture-config-files-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_devenv-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_msbuild-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_link-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_lib-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-csc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-csc-config-1/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-csc-config-2/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-dotnet-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-1/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-2/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-3/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-4/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-5/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-6/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcxx-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-javascript-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-html-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-typescript-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-jsx-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-vue-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-scalac-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-scala-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-vbc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-vbc-config-1/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ruby-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-php-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-python-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-nvcc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-go-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-go-module-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-kotlinc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-kotlin-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-kotlin-module-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|>     Node: include Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-apex-config-0/coverity_config.xml
+2024-01-01T07:44:02.980733Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-0/coverity_config.xml
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: comp_name Value: gcc
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: comp_translator Value: gcc
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: id Value: gcc-gcc-.*
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: id Value: g++-gcc-.*
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: id Value: g++cc-gcc-.*
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|>   Node: md5 Value: f9687def489d7080611c957e4baa9367
+2024-01-01T07:44:02.980833Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-0/coverity_config.xml
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: comp_name Value: g++
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: comp_translator Value: g++
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: comp_lang Value: C++
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: id Value: g++-g++-.*
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-0/../user_nodefs.h
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: id Value: g++cc-g++-.*
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-0/../user_nodefs.h
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|>   Node: md5 Value: c28c5312f5cafb3461550021d5db74e3
+2024-01-01T07:44:02.980877Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-1/coverity_config.xml
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: comp_name Value: gcc-*
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: comp_translator Value: gcc
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: id Value: gcc-gcc-*-.*
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-1/../user_nodefs.h
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: id Value: g++-gcc-*-.*
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-1/../user_nodefs.h
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: id Value: g++cc-gcc-*-.*
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-1/../user_nodefs.h
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|>   Node: md5 Value: a78235e18925f1b08d266850c13072da
+2024-01-01T07:44:02.980911Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-2/coverity_config.xml
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: comp_name Value: *-gcc
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: comp_translator Value: gcc
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: id Value: gcc-*-gcc-.*
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-2/../user_nodefs.h
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: id Value: g++-*-gcc-.*
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-2/../user_nodefs.h
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: id Value: g++cc-*-gcc-.*
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-2/../user_nodefs.h
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|>   Node: md5 Value: 330d30838fa2e2405efcbf0025bbb1d9
+2024-01-01T07:44:02.980954Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-1/coverity_config.xml
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: comp_name Value: g++-*
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: comp_translator Value: g++
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: comp_lang Value: C++
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: id Value: g++-g++-*-.*
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-1/../user_nodefs.h
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: id Value: g++cc-g++-*-.*
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-1/../user_nodefs.h
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|>   Node: md5 Value: e2e8095ec14432cf12688981162829bb
+2024-01-01T07:44:02.980996Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-2/coverity_config.xml
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: comp_name Value: *-g++
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: comp_translator Value: g++
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: comp_lang Value: C++
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: id Value: g++-*-g++-.*
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-2/../user_nodefs.h
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: id Value: g++cc-*-g++-.*
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-2/../user_nodefs.h
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|>   Node: md5 Value: f63f9f20a2517b24ca5dec686eb6ca2d
+2024-01-01T07:44:02.981031Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ld-config-0/coverity_config.xml
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: comp_name Value: ld
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: comp_translator Value: ld
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: comp_lang Value: C++
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: comp_generic Value: ld
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: id Value: ld-ld-.*
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ld-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|>   Node: md5 Value: b7c847d801b0294a4f0f52192f7f3e16
+2024-01-01T07:44:02.981067Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ar-config-0/coverity_config.xml
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: comp_name Value: ar
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: comp_translator Value: ar
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: comp_lang Value: C++
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: comp_generic Value: ar
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: id Value: ar-ar-.*
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ar-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|>   Node: md5 Value: a125f1c14acadfc9d06e8f9e711705ce
+2024-01-01T07:44:02.981094Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-3/coverity_config.xml
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: comp_name Value: cc
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: comp_translator Value: gcc
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: id Value: gcc-cc-.*
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-3/../user_nodefs.h
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: id Value: g++-cc-.*
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-3/../user_nodefs.h
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: id Value: g++cc-cc-.*
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-gcc-config-3/../user_nodefs.h
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|>   Node: md5 Value: 47a502735554e6c25b61a8bf08e5fa6d
+2024-01-01T07:44:02.981122Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-3/coverity_config.xml
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: comp_name Value: c++
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: comp_translator Value: g++
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: comp_lang Value: C++
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: comp_generic Value: gnu
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: id Value: g++-c++-.*
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-3/../user_nodefs.h
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: id Value: g++cc-c++-.*
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-g++-config-3/../user_nodefs.h
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|>   Node: md5 Value: 6110077f86d72b6001f0d20220e5c335
+2024-01-01T07:44:02.981164Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-javac-config-0/coverity_config.xml
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>         Node: comp_name Value: javac
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>         Node: comp_translator Value: javac
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>         Node: comp_lang Value: Static Java
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>         Node: comp_generic Value: java
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>         Node: id Value: javac-javac-.*
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|>   Node: md5 Value: 4dff82855a5f75486f23dc3987a065c8
+2024-01-01T07:44:02.981199Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-java-config-0/coverity_config.xml
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>         Node: comp_name Value: java
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>         Node: comp_translator Value: java
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>         Node: comp_lang Value: Static Java
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>         Node: comp_generic Value: java
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>         Node: id Value: java-java-.*
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|>   Node: md5 Value: 670e0eff61ca6e268d4c53f998738922
+2024-01-01T07:44:02.981226Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-apt-config-0/coverity_config.xml
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>         Node: comp_name Value: apt
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>         Node: comp_translator Value: apt
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>         Node: comp_lang Value: Static Java
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>         Node: comp_generic Value: java
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>         Node: id Value: apt-apt-.*
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|>   Node: md5 Value: 0c3c17692884987df5fe47566993553e
+2024-01-01T07:44:02.981253Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-javaw-config-0/coverity_config.xml
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>         Node: comp_name Value: javaw
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>         Node: comp_translator Value: javaw
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>         Node: comp_lang Value: Static Java
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>         Node: comp_generic Value: java
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>         Node: id Value: javaw-javaw-.*
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|>   Node: md5 Value: aa3bf49b5164470df847ce74b96aa069
+2024-01-01T07:44:02.981279Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-jar-config-0/coverity_config.xml
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>         Node: comp_name Value: jar
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>         Node: comp_translator Value: jar
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>         Node: comp_generic Value: java
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>         Node: id Value: jar-jar-.*
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|>   Node: md5 Value: 33ddf2457cbbfcbe629d047272f2329e
+2024-01-01T07:44:02.981307Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-jsp-config-0/coverity_config.xml
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-jsp-0
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: comp_translator Value: jsp
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: comp_generic Value: java
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.(jsp|jspx)$
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: id Value: jsp-cov-filesystem-capture-jsp-0-.*
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|>   Node: md5 Value: 425f5b1409471a4a55890e518ffea917
+2024-01-01T07:44:02.981333Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-android-config-0/coverity_config.xml
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-android-0
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: comp_translator Value: android
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: comp_generic Value: java
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*(layout.*[/\\].*\.xml|AndroidManifest\.xml|gradlew|gradlew\.bat)$
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: id Value: android-cov-filesystem-capture-android-0-.*
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|>   Node: md5 Value: f656edef6880a9092fcbe3e2cd89f87a
+2024-01-01T07:44:02.981363Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-capture-config-files-config-0/coverity_config.xml
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-capture-config-files-0
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: comp_translator Value: capture-config-files
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: comp_generic Value: capture_config_files
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: file_include_pattern Value: $capture-config-files$
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-.*
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|>   Node: md5 Value: b94e617f98adb465b84e44c2bb1187e2
+2024-01-01T07:44:02.981391Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc-config-0/coverity_config.xml
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: comp_name Value: cl
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: comp_translator Value: msvc
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: comp_generic Value: msvc
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: id Value: msvc-cl-.*
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: id Value: msvc_cxx-cl-.*
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|>   Node: md5 Value: 6ff8accc4b09ad4e240f1b39a5f34507
+2024-01-01T07:44:02.981419Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_devenv-config-0/coverity_config.xml
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: comp_name Value: devenv
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: comp_translator Value: msvc_devenv
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: comp_generic Value: msvc
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: id Value: msvc_devenv-devenv-.*
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_devenv-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|>   Node: md5 Value: 9e7c8ebecfb66972e502b9a89af46eab
+2024-01-01T07:44:02.981455Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_msbuild-config-0/coverity_config.xml
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: comp_name Value: msbuild
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: comp_translator Value: msvc_msbuild
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: comp_generic Value: msvc
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: id Value: msvc_msbuild-msbuild-.*
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_msbuild-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|>   Node: md5 Value: e5c2e6f12a32bf80391c2b796b7efd24
+2024-01-01T07:44:02.981483Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_link-config-0/coverity_config.xml
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: comp_name Value: link
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: comp_translator Value: msvc_link
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: comp_generic Value: msvc_link
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: id Value: msvc_link-link-.*
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_link-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|>   Node: md5 Value: b1e089736178f146e1b07715b3996fec
+2024-01-01T07:44:02.981513Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_lib-config-0/coverity_config.xml
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: comp_name Value: lib
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: comp_translator Value: msvc_lib
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: comp_generic Value: msvc_lib
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: id Value: msvc_lib-lib-.*
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-msvc_lib-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|>   Node: md5 Value: 05f25d5becfea0c774651a40c16d3955
+2024-01-01T07:44:02.981541Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-csc-config-0/coverity_config.xml
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>         Node: comp_name Value: csc
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>         Node: comp_translator Value: csc
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>         Node: comp_lang Value: C#
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>         Node: comp_generic Value: csc
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>         Node: id Value: csc-csc-.*
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|>   Node: md5 Value: fe090f9c5ade85b6791417ae28e7af34
+2024-01-01T07:44:02.981571Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-csc-config-1/coverity_config.xml
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>         Node: comp_name Value: csc2
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>         Node: comp_translator Value: csc
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>         Node: comp_lang Value: C#
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>         Node: comp_generic Value: csc
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>         Node: id Value: csc-csc2-.*
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|>   Node: md5 Value: 977437d947559cc8595a296b529da4b3
+2024-01-01T07:44:02.981600Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-csc-config-2/coverity_config.xml
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>         Node: comp_name Value: csc.dll
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>         Node: comp_translator Value: csc
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>         Node: comp_lang Value: C#
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>         Node: comp_generic Value: csc
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>         Node: id Value: csc-csc.dll-.*
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|>   Node: md5 Value: d7617a61a1e5d38ea17e0065e15a334c
+2024-01-01T07:44:02.981626Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-dotnet-config-0/coverity_config.xml
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: comp_name Value: dotnet
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: comp_translator Value: dotnet
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: comp_lang Value: C#
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: comp_capture_descendants Value: true
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: comp_generic Value: dotnet
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: id Value: dotnet-dotnet-.*
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|>   Node: md5 Value: c1f04f52f32e19ee321f007827420925
+2024-01-01T07:44:02.981652Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-0/coverity_config.xml
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>         Node: comp_name Value: razor
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>         Node: comp_translator Value: razor
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>         Node: comp_lang Value: Razor
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>         Node: comp_generic Value: razor
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>         Node: id Value: razor-razor-.*
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|>   Node: md5 Value: 299c29c5e1aed07e748c20434abece6a
+2024-01-01T07:44:02.981682Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-1/coverity_config.xml
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>         Node: comp_translator Value: razor
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>         Node: comp_lang Value: Razor
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>         Node: comp_generic Value: razor
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe-.*
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|>   Node: md5 Value: b8062469abf35bf27e59c61097a25898
+2024-01-01T07:44:02.981708Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-2/coverity_config.xml
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>         Node: comp_translator Value: razor
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>         Node: comp_lang Value: Razor
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>         Node: comp_generic Value: razor
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll-.*
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|>   Node: md5 Value: a9f1338dd3da86ae5a0b02feb72011bc
+2024-01-01T07:44:02.981736Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-3/coverity_config.xml
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>         Node: comp_translator Value: razor
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>         Node: comp_lang Value: Razor
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>         Node: comp_generic Value: razor
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe-.*
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|>   Node: md5 Value: d148b26c0cca97f3cfbca9c9e97fbd2c
+2024-01-01T07:44:02.981762Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-4/coverity_config.xml
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>         Node: comp_translator Value: razor
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>         Node: comp_lang Value: Razor
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>         Node: comp_generic Value: razor
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe-.*
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|>   Node: md5 Value: 4192dd38aff0a2b1f462f5ea2de56602
+2024-01-01T07:44:02.981789Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-5/coverity_config.xml
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>         Node: comp_translator Value: razor
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>         Node: comp_lang Value: Razor
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>         Node: comp_generic Value: razor
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll-.*
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|>   Node: md5 Value: 9fac531b04a3ec13b4f2c7884a7b9d4d
+2024-01-01T07:44:02.981817Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-razor-config-6/coverity_config.xml
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>         Node: comp_translator Value: razor
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>         Node: comp_lang Value: Razor
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>         Node: comp_generic Value: razor
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll-.*
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|>   Node: md5 Value: 42e63af2dc0e9a8129a530b0de6d639f
+2024-01-01T07:44:02.981843Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcc-config-0/coverity_config.xml
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_name Value: clang
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_translator Value: clangcc
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_generic Value: clang
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: clangcc:android
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: clangcc:apple
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: clangcc:llvm
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: comp_is_redirect Value: true
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: id Value: clangcc-clang-.*
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: id Value: clangcxx-clang-.*
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: id Value: clangcxxcc-clang-.*
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: id Value: clangobjc-clang-.*
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: id Value: clangobjcxx-clang-.*
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|>   Node: md5 Value: 999eeab8f668f6ac09e46790d19b72ec
+2024-01-01T07:44:02.981869Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcxx-config-0/coverity_config.xml
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_name Value: clang++
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_translator Value: clangcxx
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_lang Value: C
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_generic Value: clang
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: clangcxx:android
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: clangcxx:apple
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: clangcxx:llvm
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: comp_is_redirect Value: true
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: id Value: clangcxx-clang++-.*
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcxx-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: id Value: clangcxxcc-clang++-.*
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcxx-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: id Value: clangobjc-clang++-.*
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcxx-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: id Value: clangobjcxx-clang++-.*
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-clangcxx-config-0/../user_nodefs.h
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|>   Node: md5 Value: db1ddc7eeb63c302f4d476ef2fa8942a
+2024-01-01T07:44:02.981930Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-javascript-config-0/coverity_config.xml
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-javascript-0
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: comp_translator Value: javascript
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: comp_generic Value: javascript
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.(js|xsjs|xsjslib|cjs|mjs|map)$
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: id Value: javascript-cov-filesystem-capture-javascript-0-.*
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|>   Node: md5 Value: 28137a21bdd7588523037a27a58d8c5c
+2024-01-01T07:44:02.981987Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-html-config-0/coverity_config.xml
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-html-0
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: comp_translator Value: html
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: comp_generic Value: javascript
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.(html|htm)$
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: id Value: html-cov-filesystem-capture-html-0-.*
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|>   Node: md5 Value: d7d10d6a1e70369dda56aa898ef86396
+2024-01-01T07:44:02.982023Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-typescript-config-0/coverity_config.xml
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-typescript-0
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: comp_translator Value: typescript
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: comp_generic Value: typescript
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*(\.(ts|tsx|cts|mts)$)|(tsconfig.json)$
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: id Value: typescript-cov-filesystem-capture-typescript-0-.*
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|>   Node: md5 Value: cf8788a68f3a4cc84a38e8030bdce56b
+2024-01-01T07:44:02.982057Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-jsx-config-0/coverity_config.xml
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-jsx-0
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: comp_translator Value: jsx
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: comp_generic Value: javascript
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.jsx$
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: id Value: jsx-cov-filesystem-capture-jsx-0-.*
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|>   Node: md5 Value: 5d1e0d3949dd2e7d59d0ebbcb9d50844
+2024-01-01T07:44:02.982093Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-vue-config-0/coverity_config.xml
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-vue-0
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: comp_translator Value: vue
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: comp_generic Value: javascript
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.vue$
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: id Value: vue-cov-filesystem-capture-vue-0-.*
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|>   Node: md5 Value: 366ed949b2aaae956ba72f463b10a2c2
+2024-01-01T07:44:02.982127Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-scalac-config-0/coverity_config.xml
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>         Node: comp_name Value: scalac
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>         Node: comp_translator Value: scalac
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>         Node: comp_lang Value: Scala
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>         Node: comp_generic Value: scala
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>         Node: id Value: scalac-scalac-.*
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|>   Node: md5 Value: 72f6e51a33977034a91c37366e5501cc
+2024-01-01T07:44:02.982163Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-scala-config-0/coverity_config.xml
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>         Node: comp_name Value: scala
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>         Node: comp_translator Value: scala
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>         Node: comp_lang Value: Scala
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>         Node: comp_generic Value: scala
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>         Node: id Value: scala-scala-.*
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|>   Node: md5 Value: 06e293540a5f4dc8f97f0f06a6021b74
+2024-01-01T07:44:02.982189Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-vbc-config-0/coverity_config.xml
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>         Node: comp_name Value: vbc
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>         Node: comp_translator Value: vbc
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>         Node: comp_lang Value: Visual Basic
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>         Node: comp_generic Value: vbc
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>         Node: id Value: vbc-vbc-.*
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|>   Node: md5 Value: feeb8b03a6f975f0aaca18abe6c96895
+2024-01-01T07:44:02.982215Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-vbc-config-1/coverity_config.xml
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>         Node: comp_name Value: vbc.dll
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>         Node: comp_translator Value: vbc
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>         Node: comp_lang Value: Visual Basic
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>         Node: comp_generic Value: vbc
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>         Node: id Value: vbc-vbc.dll-.*
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|>   Node: md5 Value: fb11aa1996139335dbc0bdc5b4851b37
+2024-01-01T07:44:02.982243Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-ruby-config-0/coverity_config.xml
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-ruby-0
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: comp_translator Value: ruby
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: comp_generic Value: ruby
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*(\.rb|Gemfile)$
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: id Value: ruby-cov-filesystem-capture-ruby-0-.*
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|>   Node: md5 Value: 9a95acc499de60467aeb7e3b29315f90
+2024-01-01T07:44:02.982269Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-php-config-0/coverity_config.xml
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-php-0
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: comp_translator Value: php
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: comp_generic Value: php
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.ph(p|p3|p4|p5|p7|tml)$
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: id Value: php-cov-filesystem-capture-php-0-.*
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|>   Node: md5 Value: 6db33a0a68d7f8c9b0f5085b9afaab3b
+2024-01-01T07:44:02.982297Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-python-config-0/coverity_config.xml
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-python-0
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: comp_translator Value: python
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: comp_generic Value: python
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.p(y|y3)$
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: id Value: python-cov-filesystem-capture-python-0-.*
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|>   Node: md5 Value: fffe872853e56190241eb6585606928f
+2024-01-01T07:44:02.982327Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-nvcc-config-0/coverity_config.xml
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_name Value: nvcc
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_translator Value: nvcc
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_lang Value: CUDA
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_generic Value: nvcc
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: nvcc:qnx
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: nvcc:gnu
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_autodetect_type Value: nvcc:msvc
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: comp_is_redirect Value: true
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: id Value: nvcc-nvcc-.*
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-nvcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: id Value: nvcc_c-nvcc-.*
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-nvcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: id Value: nvcc_cxx-nvcc-.*
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: opt_preinclude_file Value: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-nvcc-config-0/../user_nodefs.h
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|>   Node: md5 Value: 466d2cf0b12aae8d4c08d59f370fbb4b
+2024-01-01T07:44:02.982354Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-go-config-0/coverity_config.xml
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>         Node: comp_name Value: go
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>         Node: comp_translator Value: go
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>         Node: comp_lang Value: Go
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>         Node: comp_generic Value: go
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>         Node: id Value: go-go-.*
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|>   Node: md5 Value: 395609931cebc474122a4d66367445f5
+2024-01-01T07:44:02.982403Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-go-module-config-0/coverity_config.xml
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-go-module-0
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: comp_translator Value: go-module
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: comp_generic Value: go
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^go\.mod$
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: id Value: go-module-cov-filesystem-capture-go-module-0-.*
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|>   Node: md5 Value: 3a8cde3348dc3549d973b7ca377a639c
+2024-01-01T07:44:02.982430Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-kotlinc-config-0/coverity_config.xml
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>         Node: comp_name Value: kotlinc
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>         Node: comp_translator Value: kotlinc
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>         Node: comp_lang Value: Kotlin
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>         Node: comp_generic Value: kotlin
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>         Node: id Value: kotlinc-kotlinc-.*
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|>   Node: md5 Value: c68e7b6acd2042f4dec6d624b2d2aa7b
+2024-01-01T07:44:02.982460Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-kotlin-config-0/coverity_config.xml
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>         Node: comp_name Value: kotlin
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>         Node: comp_translator Value: kotlin
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>         Node: comp_lang Value: Kotlin
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>         Node: comp_generic Value: kotlin
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>         Node: id Value: kotlin-kotlin-.*
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|>   Node: md5 Value: 1d37b51d78837c20116306c377ae2080
+2024-01-01T07:44:02.982486Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-kotlin-module-config-0/coverity_config.xml
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-kotlin-module-0
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: comp_translator Value: kotlin-module
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: comp_generic Value: kotlin
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.kotlin_module$
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: id Value: kotlin-module-cov-filesystem-capture-kotlin-module-0-.*
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|>   Node: md5 Value: 33c8dff4b1803fd1b46ff7624a34a01b
+2024-01-01T07:44:02.982512Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|> Configuration read from: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/config/template-apex-config-0/coverity_config.xml
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|> Node: coverity
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>   Node: cit_version Value: 1
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>   Node: config
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>     Node: build
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>       Node: compiler
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: template_compiler Value: true
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: comp_name Value: cov-filesystem-capture-apex-0
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: comp_translator Value: apex
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: comp_lang Value: Non Compiled
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: comp_generic Value: apex
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: file_include_pattern Value: ^.*\.(cls|tgr|page)$
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>       Node: options
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: id Value: apex-cov-filesystem-capture-apex-0-.*
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>         Node: begin_command_line_config
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|>   Node: md5 Value: 1fb05d61e492051b5d8339f9e71cc7cf
+2024-01-01T07:44:02.982542Z|cov-build|812564|info|> 
+2024-01-01T07:44:02.983630Z|cov-build|812564|info|> Using LD_PRELOAD = /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/libcapture-linux64-${PLATFORM}.so
+[812569] EXECUTING: make
+[812570] EXECUTING: cc -D INCLUDEMAIN -c -o motivating_ex1.o motivating_ex1.c
+[812571] CWD: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan
+[812571] COMPILING: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/cov-translate cc -D INCLUDEMAIN -c -o motivating_ex1.o motivating_ex1.c
+Encountered compiler invocation for first time, configuring it: /usr/bin/x86_64-linux-gnu-gcc-9
+[STATUS] Using comptype gcc
+* Configuring /usr/bin/cc as a C compiler
+[STATUS] gcc-config-0: Running sanity tests on native compiler
+[STATUS] gcc-config-0: Detecting size and alignment of fundamental types.
+[STATUS] gcc-config-0: Retrieving values for macros
+[STATUS] gcc-config-0: Running config probes
+* Configuring /usr/bin/cc as a C++ compiler
+[STATUS] g++-config-0: Running sanity tests on native compiler
+[STATUS] g++-config-0: Detecting size and alignment of fundamental types.
+[STATUS] g++-config-0: Retrieving values for macros
+[STATUS] g++-config-0: Running config probes
+* Configuring /usr/bin/cc as a C compiler
+[STATUS] g++cc-config-0: Running sanity tests on native compiler
+[STATUS] g++cc-config-0: Detecting size and alignment of fundamental types.
+[STATUS] g++cc-config-0: Retrieving values for macros
+[STATUS] g++cc-config-0: Running config probes
+* Configuring /usr/bin/ld as a C++ linker
+[STATUS] ld-config-0: Running config probes
+* Configuring /usr/bin/ar as a C++ linker
+Added template compiler configuration instance /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/coverity_config.xml
+Configuration read from: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: include Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/gcc-config-0/coverity_config.xml
+    Node: include Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++-config-0/coverity_config.xml
+    Node: include Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++cc-config-0/coverity_config.xml
+    Node: include Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/ld-config-0/coverity_config.xml
+    Node: include Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/ar-config-0/coverity_config.xml
+Configuration read from: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/gcc-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: cc
+        Node: comp_name Value: gcc
+        Node: comp_name Value: gcc-9
+        Node: comp_name Value: x86_64-linux-gnu-gcc-9
+        Node: comp_dir Value: /usr/bin
+        Node: comp_translator Value: gcc
+        Node: comp_lang Value: C
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C compiler
+        Node: comp_next_type Value: g++
+        Node: comp_generic Value: gnu
+        Node: comp_require
+        Node: id Value: gcc-cc-9.4.0-fc1426c77528b4c9980d1066f2180348-0
+        Node: version Value: 9.4.0
+        Node: is_compiler Value: true
+        Node: is_linker Value: true
+        Node: target_platform Value: all
+      Node: options
+        Node: id Value: gcc-cc-9.4.0-fc1426c77528b4c9980d1066f2180348-0
+        Node: template_config_option_id Value: gcc-cc-.*
+        Node: compile_options
+        Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+        Node: sysinclude_dir Value: /usr/local/include
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+        Node: sysinclude_dir Value: /usr/include
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_remove_arg Value: -o.+
+        Node: preprocess_remove_arg Value: -c
+        Node: preprocess_remove_arg Value: -Werror
+        Node: preprocess_remove_next_arg Value: -o
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -U__BLOCKS__
+        Node: preprocess_switch Value: -xc
+        Node: preprocess_compile_switch Value: -C
+        Node: preprocess_output Value: -
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/gcc-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/gcc-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --fixed_point
+        Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+        Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+        Node: prepend_arg Value: --add_type_modifier=__coverity_float
+        Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+        Node: prepend_arg Value: --no_predefined_feature_test_macros
+        Node: prepend_arg Value: --no_stdarg_builtin
+        Node: prepend_arg Value: --enable_128bit_int
+        Node: prepend_arg Value: --no_predefined_cplusplus
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.4.0
+        Node: prepend_arg Value: --size_t_type=m
+        Node: prepend_arg Value: --ptrdiff_t_type=l
+        Node: prepend_arg Value: --type_sizes=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --type_alignments=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --char_bit_size=8
+        Node: prepend_arg Value: --restrict
+        Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+        Node: prepend_arg Value: --wchar_t_type=i
+        Node: prepend_arg Value: --no_multiline_string
+        Node: prepend_arg Value: --no_trigraphs
+        Node: prepend_arg Value: --ignore_calling_convention
+        Node: prepend_arg Value: --c11
+        Node: prepend_arg Value: --enable_80bit_float
+        Node: prepend_arg Value: --enable_128bit_float
+        Node: prepend_arg Value: --allow__bool
+        Node: prepend_arg Value: --macro_stack_pragmas
+        Node: prepend_arg Value: --inline_keyword
+        Node: prepend_arg Value: --has_include_macro
+        Node: prepend_arg Value: --has_include_next_macro
+        Node: prepend_arg Value: --has_cpp_attribute_macro
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+        Node: opt_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/gcc-config-0/../user_nodefs.h
+        Node: pch_options
+          Node: archetype Value: gcc
+        Node: link_options
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /lib/../lib/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+        Node: library_search_path Value: /lib/
+        Node: library_search_path Value: /usr/lib/
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: gnu_pre_translate
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPATH
+            Node: includes_from_env_var_empty_is_cwd Value: true
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: C_INCLUDE_PATH
+            Node: pre_prepend_arg Value: --c
+        Node: begin_command_line_config
+  Node: md5 Value: 13f272720b4317f9cd0d4e7408d5c3a8
+Configuration read from: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: cc
+        Node: comp_name Value: gcc
+        Node: comp_name Value: gcc-9
+        Node: comp_name Value: x86_64-linux-gnu-gcc-9
+        Node: comp_dir Value: /usr/bin
+        Node: comp_translator Value: g++
+        Node: comp_lang Value: C++
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C++ Compiler
+        Node: comp_next_type Value: g++cc
+        Node: comp_generic Value: gnu
+        Node: comp_require
+        Node: id Value: g++-cc-9.4.0-fc1426c77528b4c9980d1066f2180348-0
+        Node: version Value: 9.4.0
+        Node: is_compiler Value: true
+        Node: is_linker Value: true
+        Node: target_platform Value: all
+      Node: options
+        Node: id Value: g++-cc-9.4.0-fc1426c77528b4c9980d1066f2180348-0
+        Node: template_config_option_id Value: g++-cc-.*
+        Node: compile_options
+        Node: sysinclude_dir Value: /usr/include/c++/9
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu/c++/9
+        Node: sysinclude_dir Value: /usr/include/c++/9/backward
+        Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+        Node: sysinclude_dir Value: /usr/local/include
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+        Node: sysinclude_dir Value: /usr/include
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_remove_arg Value: -o.+
+        Node: preprocess_remove_arg Value: -c
+        Node: preprocess_remove_arg Value: -Werror
+        Node: preprocess_remove_next_arg Value: -o
+        Node: preprocess_switch Value: -xc++
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -U__BLOCKS__
+        Node: preprocess_compile_switch Value: -C
+        Node: preprocess_output Value: -
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+        Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+        Node: prepend_arg Value: --add_type_modifier=__coverity_float
+        Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+        Node: prepend_arg Value: --no_predefined_feature_test_macros
+        Node: prepend_arg Value: --no_stdarg_builtin
+        Node: prepend_arg Value: --enable_128bit_int
+        Node: prepend_arg Value: --no_predefined_cplusplus
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.4.0
+        Node: prepend_arg Value: --size_t_type=m
+        Node: prepend_arg Value: --ptrdiff_t_type=l
+        Node: prepend_arg Value: --type_sizes=w4xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --type_alignments=w4xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --char_bit_size=8
+        Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+        Node: prepend_arg Value: --wchar_t_keyword
+        Node: prepend_arg Value: --no_multiline_string
+        Node: prepend_arg Value: --no_trigraphs
+        Node: prepend_arg Value: --ignore_calling_convention
+        Node: prepend_arg Value: --enable_80bit_float
+        Node: prepend_arg Value: --enable_128bit_float
+        Node: prepend_arg Value: --macro_stack_pragmas
+        Node: prepend_arg Value: --exceptions
+        Node: prepend_arg Value: --arg_dependent_overload
+        Node: prepend_arg Value: --inline_keyword
+        Node: prepend_arg Value: --has_include_macro
+        Node: prepend_arg Value: --has_include_next_macro
+        Node: prepend_arg Value: --has_cpp_attribute_macro
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+        Node: opt_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++-config-0/../user_nodefs.h
+        Node: pch_options
+          Node: archetype Value: gcc
+        Node: link_options
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /lib/../lib/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+        Node: library_search_path Value: /lib/
+        Node: library_search_path Value: /usr/lib/
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        Node: pre_trans
+          Node: options
+            Node: pre_prepend_arg Value: -coverity_c_suffixes_are_cxx
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPLUS_INCLUDE_PATH
+            Node: pre_prepend_arg Value: --c++
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: gnu_pre_translate
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPATH
+            Node: includes_from_env_var_empty_is_cwd Value: true
+        Node: begin_command_line_config
+  Node: md5 Value: 4a1c3b14d275d803a79242c200c2a850
+Configuration read from: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++cc-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: cc
+        Node: comp_name Value: gcc
+        Node: comp_name Value: gcc-9
+        Node: comp_name Value: x86_64-linux-gnu-gcc-9
+        Node: comp_dir Value: /usr/bin
+        Node: comp_translator Value: g++cc
+        Node: comp_lang Value: C
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C++ Compiler
+        Node: comp_generic Value: gnu
+        Node: comp_require
+        Node: id Value: g++cc-cc-9.4.0-fc1426c77528b4c9980d1066f2180348-0
+        Node: version Value: 9.4.0
+        Node: is_compiler Value: true
+        Node: is_linker Value: true
+        Node: target_platform Value: all
+      Node: options
+        Node: id Value: g++cc-cc-9.4.0-fc1426c77528b4c9980d1066f2180348-0
+        Node: template_config_option_id Value: g++cc-cc-.*
+        Node: compile_options
+        Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/9/include
+        Node: sysinclude_dir Value: /usr/local/include
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+        Node: sysinclude_dir Value: /usr/include
+        Node: dryrun_switch Value: -xc
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -xc
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_remove_arg Value: -o.+
+        Node: preprocess_remove_arg Value: -c
+        Node: preprocess_remove_arg Value: -Werror
+        Node: preprocess_remove_next_arg Value: -o
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -U__BLOCKS__
+        Node: preprocess_switch Value: -xc
+        Node: preprocess_compile_switch Value: -C
+        Node: preprocess_output Value: -
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++cc-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++cc-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --fixed_point
+        Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+        Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+        Node: prepend_arg Value: --add_type_modifier=__coverity_float
+        Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+        Node: prepend_arg Value: --no_predefined_feature_test_macros
+        Node: prepend_arg Value: --no_stdarg_builtin
+        Node: prepend_arg Value: --enable_128bit_int
+        Node: prepend_arg Value: --no_predefined_cplusplus
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.4.0
+        Node: prepend_arg Value: --size_t_type=m
+        Node: prepend_arg Value: --ptrdiff_t_type=l
+        Node: prepend_arg Value: --type_sizes=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --type_alignments=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --char_bit_size=8
+        Node: prepend_arg Value: --restrict
+        Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+        Node: prepend_arg Value: --wchar_t_type=i
+        Node: prepend_arg Value: --no_multiline_string
+        Node: prepend_arg Value: --no_trigraphs
+        Node: prepend_arg Value: --ignore_calling_convention
+        Node: prepend_arg Value: --c11
+        Node: prepend_arg Value: --enable_80bit_float
+        Node: prepend_arg Value: --enable_128bit_float
+        Node: prepend_arg Value: --allow__bool
+        Node: prepend_arg Value: --macro_stack_pragmas
+        Node: prepend_arg Value: --inline_keyword
+        Node: prepend_arg Value: --has_include_macro
+        Node: prepend_arg Value: --has_include_next_macro
+        Node: prepend_arg Value: --has_cpp_attribute_macro
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+        Node: opt_preinclude_file Value: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/g++cc-config-0/../user_nodefs.h
+        Node: pch_options
+          Node: archetype Value: gcc
+        Node: link_options
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /lib/../lib/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/9/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../
+        Node: library_search_path Value: /lib/
+        Node: library_search_path Value: /usr/lib/
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: gnu_pre_translate
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPATH
+            Node: includes_from_env_var_empty_is_cwd Value: true
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: C_INCLUDE_PATH
+            Node: pre_prepend_arg Value: --c
+        Node: begin_command_line_config
+  Node: md5 Value: 9ff5c88df75e6b8182060fb890f60dc9
+Configuration read from: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/ld-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: ld
+        Node: comp_name Value: x86_64-linux-gnu-ld
+        Node: comp_name Value: x86_64-linux-gnu-ld.bfd
+        Node: comp_dir Value: /usr/bin
+        Node: comp_translator Value: ld
+        Node: comp_lang Value: C++
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C/C++ Linker
+        Node: comp_generic Value: ld
+        Node: id Value: ld-ld-fc1426c77528b4c9980d1066f2180348-0
+        Node: is_compiler Value: false
+        Node: is_linker Value: true
+      Node: options
+        Node: id Value: ld-ld-fc1426c77528b4c9980d1066f2180348-0
+        Node: template_config_option_id Value: ld-ld-.*
+        Node: link_options
+        Node: library_search_path Value: /usr/local/lib/x86_64-linux-gnu
+        Node: library_search_path Value: /lib/x86_64-linux-gnu
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu64
+        Node: library_search_path Value: /usr/local/lib64
+        Node: library_search_path Value: /lib64
+        Node: library_search_path Value: /usr/lib64
+        Node: library_search_path Value: /usr/local/lib
+        Node: library_search_path Value: /lib
+        Node: library_search_path Value: /usr/lib
+        Node: library_search_path Value: /usr/x86_64-linux-gnu/lib64
+        Node: library_search_path Value: /usr/x86_64-linux-gnu/lib
+        Node: begin_command_line_config
+  Node: md5 Value: f89dd938ff9b6fb6be0800d4b9e56dc0
+Configuration read from: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/ar-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: ar
+        Node: comp_name Value: x86_64-linux-gnu-ar
+        Node: comp_dir Value: /usr/bin
+        Node: comp_translator Value: ar
+        Node: comp_lang Value: C++
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: UNIX-like 'ar` archiver
+        Node: comp_generic Value: ar
+        Node: id Value: ar-ar-fc1426c77528b4c9980d1066f2180348-0
+        Node: is_compiler Value: false
+        Node: is_linker Value: true
+      Node: options
+        Node: id Value: ar-ar-fc1426c77528b4c9980d1066f2180348-0
+        Node: template_config_option_id Value: ar-ar-.*
+        Node: link_options
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: ar_pre_translate
+        Node: begin_command_line_config
+  Node: md5 Value: f2c6fe40d06038ae191b421a8ce9ae6f
+COV_TRANSLATE EXPANDED ARGS: "-D" "INCLUDEMAIN" "-c" "-o" "motivating_ex1.o" "motivating_ex1.c"
+[STATUS] Compiling motivating_ex1.c
+/home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/cov-emit --dir=/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int --ignore_path=/tmp/cov-raoxue/95706ede58e90b6974137b79c834cf29/cov-configure --ignore_path=/tmp/cov-raoxue/95706ede58e90b6974137b79c834cf29/cov-raoxue/c3e1a3fffafe90181fd8837dc0b9302a --pre_preinclude /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/gcc-config-0/coverity-macro-compat.h --pre_preinclude /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/gcc-config-0/coverity-compiler-compat.h --c --fixed_point --add_type_modifier=__coverity___fpreg --add_type_modifier=__coverity_decimal --add_type_modifier=__coverity_float --add_type_modifier=__coverity_floatx --no_predefined_feature_test_macros --no_stdarg_builtin --enable_128bit_int --no_predefined_cplusplus -w --no_predefines --comp_ver 9.4.0 --char_bit_size=8 --restrict --gnu_carriage_return_line_terminator --no_multiline_string --no_trigraphs --ignore_calling_convention --c11 --enable_80bit_float --enable_128bit_float --allow__bool --macro_stack_pragmas --inline_keyword --has_include_macro --has_include_next_macro --has_cpp_attribute_macro --no_predefines --emit_pch_dependencies --builtin_emulation --gcc --c11 --gnu_version 90400 --no_trigraphs --uliterals --sys_include=/usr/lib/gcc/x86_64-linux-gnu/9/include --sys_include=/usr/local/include --sys_include=/usr/include/x86_64-linux-gnu --sys_include=/usr/include -DINCLUDEMAIN -D__NO_INLINE__ --type_sizes=e16Pdlx8fi4s2 --type_alignments=e16Pdlx8fi4s2 --size_t_type=m --wchar_t_type=i --ptrdiff_t_type=l motivating_ex1.c 
+Emit for file '/home/raoxue/Desktop/工作站/My_sliver/coverity_scan/motivating_ex1.c' (TU 1) complete.
+[813606] EXECUTING: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -imultiarch x86_64-linux-gnu -D INCLUDEMAIN motivating_ex1.c -quiet -dumpbase motivating_ex1.c -mtune=generic -march=x86-64 -auxbase-strip motivating_ex1.o -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cctbR68X.s
+[813607] EXECUTING: as --64 -o motivating_ex1.o /tmp/cctbR68X.s
+[813608] EXECUTING: cc -o program motivating_ex1.o
+[813609] CWD: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan
+[813609] COMPILING: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/cov-translate cc -o program motivating_ex1.o
+Using cached template compiler configuration instance /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int/emit/raoxue-Inspiron-3910/config/fc1426c77528b4c9980d1066f2180348/coverity_config.xml
+COV_TRANSLATE EXPANDED ARGS: "-o" "program" "motivating_ex1.o"
+[813610] EXECUTING: /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cccM2Lgp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o program /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. motivating_ex1.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+[813611] EXECUTING: /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cccM2Lgp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o program /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. motivating_ex1.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+2024-01-01T07:44:08.408125Z|cov-build|812564|info|> Invoking cov-security-da with commands: /home/raoxue/Downloads/cov-analysis-linux64-2023.6.2/bin/cov-security-da --dir /home/raoxue/Desktop/工作站/My_sliver/coverity_scan/cov-int
+2024-01-01T07:44:08.450434Z|cov-build|812564|info|> Dynamic analyzer took 42 ms
+2024-01-01T07:44:08.450434Z|cov-build|812564|info|> Build time (cov-build overall): 00:00:05.570838
+2024-01-01T07:44:08.450434Z|cov-build|812564|info|> 
+2024-01-01T07:44:08.450935Z|cov-build|812564|info|> Build time (C/C++ emits total): 00:00:05.367012
+2024-01-01T07:44:08.450935Z|cov-build|812564|info|> 
+2024-01-01T07:44:08.450935Z|cov-build|812564|info|> 
+2024-01-01T07:44:08.450970Z|cov-build|812564|info|> Emitted 1 C/C++ compilation units (100%) successfully
+2024-01-01T07:44:08.450970Z|cov-build|812564|info|> 
+2024-01-01T07:44:08.450970Z|cov-build|812564|info|> 1 C/C++ compilation units (100%) are ready for analysis
+2024-01-01T07:44:08.450970Z|cov-build|812564|info|> The cov-build utility completed successfully.

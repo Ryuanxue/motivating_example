@@ -1,0 +1,8 @@
+Native Compiler invocation: /usr/bin/cc -D INCLUDEMAIN -c -o motivating_ex1.o motivating_ex1.c
+Working directory: /home/raoxue/Desktop/工作站/My_sliver/coverity_scan
+Comptype: gcc
+* Configuring /usr/bin/cc as a C compiler
+* Configuring /usr/bin/cc as a C++ compiler
+* Configuring /usr/bin/cc as a C compiler
+* Configuring /usr/bin/ld as a C++ linker
+* Configuring /usr/bin/ar as a C++ linker
